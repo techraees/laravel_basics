@@ -1,0 +1,1 @@
+<img src="{{asset('1.jpg')}}" width="32px" height="32px" style="border-radius: 50%" />
