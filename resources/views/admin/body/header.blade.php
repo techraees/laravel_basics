@@ -1,4 +1,10 @@
 <header id="page-topbar">
+
+    @php
+        $id = Auth::user()->id;
+        $data = App\Models\User::find($id);
+      
+    @endphp
     <div class="navbar-header">
         <div class="d-flex">
             <!-- LOGO -->
@@ -381,8 +387,8 @@
                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class="rounded-circle header-profile-user"
-                        src="{{ asset('backend/assets/images/users/avatar-1.jpg') }}" alt="Header Avatar">
-                    <span class="d-none d-xl-inline-block ms-1">Julia</span>
+                        src="{{ !empty($adminData->profile_image) ? url('upload/admin_images/' . $adminData->profile_image) : url("noProfile.jpeg") }}" alt="Header Avatar">
+                    <span class="d-none d-xl-inline-block ms-1">{{$data->name}}</span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
