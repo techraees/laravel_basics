@@ -3,7 +3,7 @@
     @php
         $id = Auth::user()->id;
         $data = App\Models\User::find($id);
-      
+
     @endphp
     <div class="navbar-header">
         <div class="d-flex">
@@ -387,16 +387,19 @@
                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class="rounded-circle header-profile-user"
-                        src="{{ !empty($adminData->profile_image) ? url('upload/admin_images/' . $adminData->profile_image) : url("noProfile.jpeg") }}" alt="Header Avatar">
-                    <span class="d-none d-xl-inline-block ms-1">{{$data->name}}</span>
+                        src="{{ !empty($adminData->profile_image) ? url('upload/admin_images/' . $adminData->profile_image) : url('noProfile.jpeg') }}"
+                        alt="Header Avatar">
+                    <span class="d-none d-xl-inline-block ms-1">{{ $data->name }}</span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
                     <!-- item-->
                     <a class="dropdown-item" href="{{ route('admin.profile') }}"><i
                             class="ri-user-line align-middle me-1"></i> Profile</a>
-                    <a class="dropdown-item" href="#"><i class="ri-wallet-2-line align-middle me-1"></i> My
-                        Wallet</a>
+                    <a class="dropdown-item" href="/store/change-pass"><i
+                            class="ri-wallet-2-line align-middle me-1"></i>
+                        Change
+                        Password</a>
                     <a class="dropdown-item d-block" href="#"><span
                             class="badge bg-success float-end mt-1">11</span><i
                             class="ri-settings-2-line align-middle me-1"></i> Settings</a>
