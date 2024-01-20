@@ -12,12 +12,12 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="{{ asset('fronend/assets/css/bootstrap.min.css') }}')}}">
+    <link rel="stylesheet" href="{{ asset('fronend/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/fontawesome-all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('fronend/assets/css/default.css') }}">')}}')}}')}}
+    <link rel="stylesheet" href="{{ asset('fronend/assets/css/default.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/responsive.css') }}">
 </head>

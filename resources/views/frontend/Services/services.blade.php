@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/default.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('fronend/assets/css/responsive.css') }}">'
+    <link rel="stylesheet" href="{{ asset('fronend/assets/css/responsive.css') }}">
 </head>
 
 <body>

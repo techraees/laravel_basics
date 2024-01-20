@@ -54,7 +54,7 @@
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Contact</li>
                                 </ol>
-                            </nav>')}}
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
 
 
     <!-- JS here -->
-    <script src="{{ asset('fronend/assets/js/vendor/jquery-3.6.0.min.js') }}')}}"></script>
+    <script src="{{ asset('fronend/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('fronend/assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('fronend/assets/js/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('fronend/assets/js/imagesloaded.pkgd.min.js') }}"></script>

@@ -12,14 +12,14 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="{{ asset('fronend/assets/css/bootstrap.min.css') }}')}}">
+    <link rel="stylesheet" href="{{ asset('fronend/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/fontawesome-all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/default.css') }}">
     <link rel="stylesheet" href="{{ asset('fronend/assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('fronend/assets/css/responsive.css') }}')}}')}}')}}">
+    <link rel="stylesheet" href="{{ asset('fronend/assets/css/responsive.css') }}">
 </head>
 
 <body>
@@ -79,8 +79,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="services__details__thumb">
-                            <img src="{{ asset('fronend/assets/img/images/services_details01.jpg') }}')}}')}}"
-                                alt="">
+                            <img src="{{ asset('fronend/assets/img/images/services_details01.jpg') }}" alt="">
                         </div>
                         <div class="services__details__content">
                             <h2 class="title">Rixelda - 24 hours Control room landing page</h2>
@@ -110,11 +109,11 @@
                             <div class="services__details__img">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <img src="{{ asset('fronend/assets/img/images/services_details02.jpg') }}')}}"
+                                        <img src="{{ asset('fronend/assets/img/images/services_details02.jpg') }}"
                                             alt="">
                                     </div>
                                     <div class="col-sm-6">
-                                        <img src="{{ asset('fronend/assets/img/images/services_details03.jpg') }}')}}"
+                                        <img src="{{ asset('fronend/assets/img/images/services_details03.jpg') }}"
                                             alt="">
                                     </div>
                                 </div>

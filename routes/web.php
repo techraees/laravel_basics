@@ -27,10 +27,10 @@ Route::controller(FrontendController::class)->group(function () {
     Route::get('/about', 'about')->name('frontend.About.about');
     Route::get('/contact', 'contact')->name('frontend.Contact.contact');
     Route::get('/blog', 'blog')->name('frontend.Blog.blog');
-    Route::get('/blog-details', 'blog')->name('frontend.Blog.blogDetails');
+    Route::get('/blog-details', 'blogdetails')->name('frontend.Blog.blogDetails');
     Route::get('/services-details', 'services')->name('frontend.Services.services');
     Route::get('/portfolio', 'portfolio')->name('frontend.Portfolio.portfolio');
-    Route::get('/portfolio-details', 'portfolio')->name('frontend.Portfolio.portfolio');
+    Route::get('/portfolio-details', 'portfolioDetail')->name('frontend.Portfolio.portfolio');
 });
 
 
