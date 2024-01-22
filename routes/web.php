@@ -24,6 +24,7 @@ Route::get('/', function () {
 
 Route::controller(FrontendController::class)->group(function () {
     Route::get('/index', 'home')->name("frontend.index");
+    Route::get('/', 'home')->name("frontend.index");
     Route::get('/about', 'about')->name('frontend.About.about');
     Route::get('/contact', 'contact')->name('frontend.Contact.contact');
     Route::get('/blog', 'blog')->name('frontend.Blog.blog');
@@ -46,6 +47,8 @@ Route::controller(AdminController::class)->group(function () {
     Route::post('/store/profile', 'UpdatedEditProfile')->name('admin.update.editProfile');
     Route::post('/update-password', 'UpdatePassword')->name('admin.update.editProfile');
     Route::get('/store/change-pass', 'UpdatePass')->name('admin.update.password');
+    Route::get('/store/change-hero', 'ChangeHero')->name('admin.home.hero.section');
+    Route::post('/store/change-hero-change', 'ChangeHeroDetails')->name('admin.home.hero.change');
 });
 
 

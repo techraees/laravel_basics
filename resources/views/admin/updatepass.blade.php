@@ -12,7 +12,6 @@
 
 
         <div class="mt-5">
-
             @if (count($errors))
                 @foreach ($errors->all() as $error)
                     <p class="alert alert-danger alert-dismissible fade show">

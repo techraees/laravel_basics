@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\HomeModel;
 
 class FrontendController extends Controller
 {
     public function home()
     {
-        return view('frontend.index');
+        $hero_name = HomeModel::find(1);
+        return view('frontend.index', compact("hero_name"));
     }
 
     public function about()

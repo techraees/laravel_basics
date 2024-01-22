@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\HomeModel;
 use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
@@ -92,5 +93,31 @@ class AdminController extends Controller
         $editData->save();
 
         return redirect()->route("admin.profile");
+    }
+
+    public function ChangeHero()
+    {
+        $heroData = HomeModel::find(1);
+        return view("admin.admin_edit_hero", compact('heroData'));
+    }
+
+    public function ChangeHeroDetails(Request $request)
+    {
+        $heroData = HomeModel::find($request->id);
+        $heroData->title = $request->title;
+        $heroData->description = $request->description;
+        $heroData->video_link = $request->video_link;
+        $heroData->profile_image = $request->profile_image;
+
+        if ($request->file('profile_image')) {
+            $file = $request->file('profile_image');
+
+            $filename = date("Ymdhi") . $file->getClientOriginalName();
+            $file->move(public_path('upload/admin_images/'), $filename);
+            $heroData["profile_image"] = $filename;
+        }
+
+        $heroData->save();
+        return view("admin.admin_edit_hero", compact("heroData"));
     }
 }
